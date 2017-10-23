@@ -1,5 +1,0 @@
-set terminal pngcairo size '360', '280' 
-set xlabel 'eixo x' 
-set ylabel 'eixo y' 
-set output 'graphlog.png' 
-plot 'graphlog.txt' 
