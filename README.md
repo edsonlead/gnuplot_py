@@ -24,6 +24,7 @@ Futuras funcionalidades:
 
 ### Como usar
 
+    ```python
     from gplotpy import Gplotpy as gp
 
     title = gp.title("Título do Gráfico", "20")
@@ -34,5 +35,5 @@ Futuras funcionalidades:
 
     gp.template(tpl, title, label, figure, plot)
     gp.execute(tpl)
-
+    ```
 
