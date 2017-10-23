@@ -1,7 +1,9 @@
 ## Gplotpy
 
+
 **Em Desenvolvimento**
 
+* Motivação: [hillClimbing](https://github.com/GabsGear/hillClimbing)
 * Objetivo: executar o Gnuplot dentro de um arquivo .py
 * Requisito: Gnuplot instalado
 
