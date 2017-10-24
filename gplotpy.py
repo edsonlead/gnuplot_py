@@ -16,15 +16,21 @@ class Gplotpy():
                 "\nset output '{}png'".format(filename[0:-3]))
         return sf
 
+    def line(tipe, collor):
+        line = ("\nset style line 1 linetype '{}' linecolor '{}'".format(tipe, collor) +
+		"\nset style function lines")
+        return line   
+
     def plot(filename):
-        plt = ("\nplot '{}'".format(filename))
+        plt = ("\nplot '{}' with lines ls 1".format(filename))
         return plt
 
-    def template(tpl, title, label, figure, plot):
+    def template(tpl, title, label, figure, line, plot):
         ctpl = open(tpl, 'w')
         ctpl.write(title)
         ctpl.write(label)
         ctpl.write(figure)
+        ctpl.write(line)
         ctpl.write(plot)
         ctpl.close()
 
